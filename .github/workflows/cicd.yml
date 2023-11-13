@@ -25,6 +25,6 @@ jobs:
                 cd webuygulama
                 docker buildx create --use
                 docker build -t hacer01/cicdeneme:latest .
-                docker push hacer01/cicdeneme::latest
+                docker push hacer01/cicdeneme:latest
             env:
                 DOCKER_CLI_EXPERIMENTAL: enabled
