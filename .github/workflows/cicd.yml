@@ -24,7 +24,7 @@ jobs:
             run: |
                 cd webuygulama
                 docker buildx create --use
-                docker build -t ${{ secrets.USERNAME }}/cicdeneme:latest .
-                docker push ${{ secrets.USERNAME }}/cicdeneme::latest
+                docker build -t hacer01/cicdeneme:latest .
+                docker push hacer01/cicdeneme::latest
             env:
                 DOCKER_CLI_EXPERIMENTAL: enabled
