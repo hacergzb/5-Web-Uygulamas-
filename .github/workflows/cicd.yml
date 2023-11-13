@@ -22,6 +22,7 @@ jobs:
 
           - name: Build and Push Docker Image
             run: |
+                cd webuygulama
                 docker buildx create --use
                 docker build -t ${{ secrets.USERNAME }}/cicdeneme:latest .
                 docker push ${{ secrets.USERNAME }}/cicdeneme::latest
